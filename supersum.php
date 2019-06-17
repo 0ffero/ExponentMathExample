@@ -35,9 +35,9 @@ for ($i=1; $i<=$loopCount; $i++) {
 	if (strpos((string)$div, "E")>0) {
 		$strpos = strpos((string)$div, "E");
 		$exponent = substr((string)$div,$strpos+2);
-		if ($exponent>=$precision) { 
+		if ($exponent>=$precision) {  // Precision Death
 			$precDeath = ' class="precdeath"';
-			if ($precisionDeath==0) { // Precision Death
+			if ($precisionDeath==0) {
 				$precisionDeath = $i; $opTable .= "\t" . '<tr class="pdH"><td colspan="5">Precision Death occurs here</td></tr>' . PHP_EOL;
 			}
 		}
