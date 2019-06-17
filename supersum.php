@@ -1,5 +1,5 @@
 <!--
-	A quick script to show that 0 + 1/2 + 1/4 + 1/8 ... ! = 1/12
+	A quick script to show that 0 + 1/2 + 1/4 + 1/8 ... ! = -1/12
 	Precision is changeable (currently set at 60 decimal places)
 	Also a good example of what I like to call precision death.
 	It's a simple way to show how computers deal with floating
@@ -13,7 +13,7 @@ td { border: 1px solid black; }
 <?php
 // These vars can be changed to whatever you want really
 $precision = 60;
-$loopCount=256;
+$loopCount = 256;
 
 // These are init vars used by the script
 $br="<br/>";
