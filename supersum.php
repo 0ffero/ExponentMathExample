@@ -6,11 +6,11 @@
 	point maths and their limitations.
 //-->
 <style type="text/css">
-table { font-family: monospace; }
-td { border: 1px solid black; }
-td:nth-child(3) { text-align: center; }
-.pdH { background-color: black; color: red; font-variant: small-caps; font-size: 20px; }
-.precdeath { color: red; }
+	table { font-family: monospace; }
+	td { border: 1px solid black; }
+	td:nth-child(3) { text-align: center; }
+	.pdH { background-color: black; color: red; font-variant: small-caps; font-size: 20px; }
+	.precdeath { color: red; }
 </style>
 <?php
 // These vars can be changed to whatever you want really
@@ -28,7 +28,7 @@ $br="<br/>" . PHP_EOL;
 bcscale($precision);
 
 // start doing shit
-$opTable = '<table cellpadding="2" cellspacing="4">' . PHP_EOL . '<tr><td>Loop</td><td>Divider</td><td>Exponent</td><td>Real Divider</td><td>Total</td></tr>' . PHP_EOL;
+$opTable = '<table cellpadding="2" cellspacing="4">' . PHP_EOL . "\t" . '<tr><td>Loop</td><td>Divider</td><td>Exponent</td><td>Real Divider</td><td>Total</td></tr>' . PHP_EOL;
 for ($i=1; $i<=$loopCount; $i++) {
 	$div *= 2;
 	$strDiv = number_format($div,0,'','');
