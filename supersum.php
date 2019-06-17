@@ -11,12 +11,12 @@ td { border: 1px solid black; }
 .precdeath { color: red; }
 </style>
 <?php
-// This var can be changed to whatever you want really
+// These vars can be changed to whatever you want really
 $precision = 60;
+$loopCount=256;
 
 // These are init vars used by the script
 $br="<br/>";
-$loopCount=256;
 $div = 1;
 $total = 0;
 $precisionDeath = 0;
